@@ -23,8 +23,8 @@ const getWeather = () => {
       const city = res.data.name;
       const status = Object.assign({}, ...res.data.weather);
 
-      warning.textContent = ""
-      input.value = ""
+      warning.textContent = "";
+      input.value = "";
 
       weather.textContent = status.main;
       cityName.textContent = city;
@@ -51,5 +51,9 @@ const getWeather = () => {
     .catch(() => (warning.textContent = "Please, enter correct city name"));
 };
 
+const checkEnter = (e) => {
+  if (e.key === "Enter") getWeather();
+};
+
 button.addEventListener("click", getWeather);
-button.addEventListener("", getWeather);
+input.addEventListener("keyup", checkEnter);
