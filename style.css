@@ -1,118 +1,120 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
-    background-image: linear-gradient(315deg, #c2118d 0%, #ff503c 74%);
-    font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    315deg,
+    hsl(320, 85%, 40%) 0%,
+    hsl(6, 100%, 60%) 75%
+  );
 }
 
 h1 {
-    text-transform: uppercase;
-    text-align: center;
-    padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
 }
 
 input {
-    font-size: 16px;
-    padding: 5px 10px;
-    margin-top: 10px;
-    background: none;
-    border: none;
-    color: #fff;
-    border-bottom: 2px solid #ddd;
+  font-size: 1rem;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  border-bottom: 2px solid hsl(0, 0%, 85%);
 }
 
 input::placeholder {
-    color: #ddd;
-    font-family: 'Montserrat', sans-serif;
+  color: hsl(0, 0%, 85%);
 }
 
 button {
-    padding: 10px;
-    margin-left: 20px;
-    color: #fff;
-    font-weight: bold;
-    background: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color .3s, color .3s;
+  padding: 10px;
+  margin-left: 20px;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  background: none;
+  border: 2px solid hsl(0, 0%, 85%);
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    color: #333;
-    background-color: #ddd;
+  background-color: hsla(0, 0%, 85%, 0.3);
 }
 
 .wrapper {
-    width: 800px;
-    padding: 20px 40px;
-    background-color: rgba(0, 0, 0, .8);
-    border: 2px solid white;
-    border-radius: 25px;
+  width: 800px;
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+  border-radius: 25px;
 }
 
 .top {
-    height: 260px;
+  height: 260px;
 }
 
 .bottom {
-    height: 140px;
+  height: 140px;
 }
 
 .main-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
 }
 
 .city-name {
-    font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .headings,
 .weather-info {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .headings p,
 .weather-info p {
-    width: 33.3%;
-    text-align: center;
+  width: 33.3%;
+  text-align: center;
 }
 
 .headings {
-    height: 35%;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+  height: 35%;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top: 1px solid hsl(0, 0%, 85%);
+  border-bottom: 1px solid hsl(0, 0%, 85%);
 }
 
 .weather-info {
-    height: 65%;
-    font-size: 26px;
+  height: 65%;
+  font-size: 2rem;
 }
 
 .photo {
-    width: 140px;
-    height: 140px;
-	object-fit: contain;
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
 }
 
 .warning {
-    margin-top: 10px;
-    font-size: 14px;
-    color: tomato;
+  margin-top: 10px;
+  font-size: 14px;
+  color: hsl(10, 100%, 65%);
 }
